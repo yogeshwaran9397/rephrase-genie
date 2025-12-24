@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>RephraseGenie</h2>
+    
+    <!-- Authentication Section -->
+    <div class="section" id="authSection">
+      <h3>Authentication</h3>
+      
+      <!-- Sign In View -->
+      <div id="signInView" class="auth-view">
+        <p class="auth-message">⚠️ OpenAI OAuth is coming soon. For now, please use your API key below.</p>
+        <button id="signInButton" class="auth-button" disabled>
+          🔒 Sign In with OpenAI (Coming Soon)
+        </button>
+        <div class="divider">
+          <span>Use API Key</span>
+        </div>
+        <div class="api-key-section">
+          <input type="password" id="apiKey" placeholder="Enter your OpenAI API key" />
+          <button id="saveApiKey">Save API Key</button>
+          <p class="api-help">Get your API key from <a href="https://platform.openai.com/api-keys" target="_blank">OpenAI Platform</a></p>
+        </div>
+      </div>
+      
+      <!-- Signed In View -->
+      <div id="signedInView" class="auth-view" style="display: none;">
+        <div class="user-info">
+          <div class="user-avatar">👤</div>
+          <div class="user-details">
+            <span id="userEmail" class="user-email">Loading...</span>
+            <span class="auth-status">✅ Authenticated</span>
+          </div>
+        </div>
+        <button id="signOutButton" class="sign-out-button">Sign Out</button>
+      </div>
+      
+      <div id="authStatus" class="status"></div>
+    </div>
+
+    <!-- Original Text Section -->
+    <div class="section">
+      <h3>Original Text</h3>
+      <textarea id="originalText" readonly placeholder="Select text on any webpage and right-click 'Rephrase with RephraseGenie'"></textarea>
+    </div>
+
+    <!-- Rephrased Text Section -->
+    <div class="section">
+      <h3>Rephrased Text</h3>
+      <textarea id="rephrasedText" placeholder="Rephrased text will appear here..."></textarea>
+      <div class="button-group">
+        <button id="copyButton">Copy to Clipboard</button>
+        <button id="replaceButton">Replace on Page</button>
+        <button id="rephraseAgain">Rephrase Again</button>
+      </div>
+      <div id="actionStatus" class="status"></div>
+    </div>
+
+    <!-- Tone Selection -->
+    <div class="section">
+      <h3>Tone Style</h3>
+      <select id="toneSelect">
+        <option value="professional">Professional</option>
+        <option value="casual">Casual</option>
+        <option value="formal">Formal</option>
+        <option value="technical">Technical</option>
+        <option value="friendly">Friendly</option>
+        <option value="concise">Concise</option>
+      </select>
+    </div>
+
+    <!-- Instructions -->
+    <div class="section instructions">
+      <h3>How to Use</h3>
+      <ol>
+        <li>Sign in with your OpenAI account above</li>
+        <li>Select text on any webpage</li>
+        <li>Right-click → "Rephrase with RephraseGenie"</li>
+        <li>View and use the rephrased text here</li>
+        <li>Or use keyboard shortcut: <strong>Ctrl+Shift+R</strong></li>
+      </ol>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

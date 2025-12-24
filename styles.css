@@ -1,0 +1,420 @@
+/* Popup Styles for Rephrase Extension */
+
+body {
+  width: 400px;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  padding: 16px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a73e8;
+  text-align: center;
+  border-bottom: 2px solid #e8eaed;
+  padding-bottom: 10px;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #5f6368;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #e8eaed;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.section:hover {
+  background: #f8f9fa;
+  border-color: #dadce0;
+}
+
+/* Authentication Styles */
+.auth-view {
+  transition: all 0.3s ease;
+}
+
+.auth-message {
+  margin: 0 0 15px 0;
+  font-size: 13px;
+  color: #5f6368;
+  text-align: center;
+}
+
+.auth-button {
+  background: #1a73e8;
+  color: white;
+  width: 100%;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.auth-button:hover {
+  background: #1557b0;
+}
+
+.api-help {
+  font-size: 11px;
+  color: #5f6368;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.api-help a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.api-help a:hover {
+  text-decoration: underline;
+}
+
+.auth-button:disabled {
+  background: #9aa0a6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #dadce0;
+}
+
+.divider span {
+  margin: 0 15px;
+  font-size: 12px;
+  color: #5f6368;
+  background: #fafafa;
+  padding: 0 5px;
+}
+
+.api-key-fallback {
+  margin-top: 10px;
+}
+
+.api-key-fallback summary {
+  font-size: 12px;
+  color: #1a73e8;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.api-key-fallback[open] summary {
+  margin-bottom: 10px;
+}
+
+.api-key-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: #e8f5e8;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  background: #1a73e8;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.user-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-email {
+  font-weight: 500;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.auth-status {
+  font-size: 12px;
+  color: #2d7d32;
+}
+
+.sign-out-button {
+  background: #ea4335;
+  color: white;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.sign-out-button:hover {
+  background: #d33b2c;
+}
+
+/* Input Styles */
+input[type="password"], 
+input[type="text"], 
+textarea, 
+select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  background: white;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 150px;
+  line-height: 1.4;
+}
+
+textarea[readonly] {
+  background: #f8f9fa;
+  color: #5f6368;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* Button Styles */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+#saveApiKey {
+  background: #1a73e8;
+  color: white;
+  margin-top: 8px;
+  width: 100%;
+}
+
+#saveApiKey:hover {
+  background: #1557b0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.button-group button {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+#copyButton {
+  background: #34a853;
+  color: white;
+}
+
+#copyButton:hover {
+  background: #2d8e47;
+}
+
+#replaceButton {
+  background: #ea4335;
+  color: white;
+}
+
+#replaceButton:hover {
+  background: #d33b2c;
+}
+
+#rephraseAgain {
+  background: #fbbc04;
+  color: #1a1a1a;
+}
+
+#rephraseAgain:hover {
+  background: #f9ab00;
+}
+
+/* Status Messages */
+.status {
+  font-size: 12px;
+  margin-top: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.status.success {
+  background: #e8f5e8;
+  color: #2d7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.status.error {
+  background: #fce8e6;
+  color: #c5221f;
+  border: 1px solid #f8bbd9;
+}
+
+.status.info {
+  background: #e3f2fd;
+  color: #1565c0;
+  border: 1px solid #bbdefb;
+}
+
+/* Instructions Section */
+.instructions {
+  background: #f0f4ff;
+  border-color: #c8daff;
+}
+
+.instructions h3 {
+  color: #1a73e8;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.instructions strong {
+  background: #e8eaed;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-height: 600px) {
+  body {
+    min-height: auto;
+  }
+  
+  .container {
+    padding: 12px;
+  }
+  
+  .section {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  textarea {
+    min-height: 60px;
+    max-height: 100px;
+  }
+}
+
+/* Animation for status messages */
+.status {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Loading state */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Scroll styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

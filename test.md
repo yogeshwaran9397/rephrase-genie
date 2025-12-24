@@ -1,27 +1,50 @@
-**To Test the Fix:**
-Reload the extension in chrome://extensions/
-Open Developer Tools (F12) and go to the Console tab
-Go to any webpage with text
-Select some text and right-click → "Rephrase with ChatGPT"
-Check the console for debug messages
-Open the extension popup to see the status
+# RephraseGenie Testing Guide
 
-**How to Use Now:**
-Get your OpenAI API Key:
+## 🧪 Testing the Extension
 
-Go to https://platform.openai.com/api-keys
-Sign in to your OpenAI account
-Create a new API key
-Copy the key
-Set up the extension:
+### **Step 1: Reload Extension**
 
-Click the extension icon
-Paste your API key in the input field
-Click "Save API Key"
-You should see "✅ API key configured - Ready to rephrase!"
-Start rephrasing:
+1. Navigate to `chrome://extensions/`
+2. Locate RephraseGenie extension
+3. Click the refresh/reload button
 
-Go to any webpage
-Select some text
-Right-click → "Rephrase with ChatGPT"
-Check the extension popup for results
+### **Step 2: Enable Developer Tools**
+
+1. Press `F12` or right-click → "Inspect"
+2. Go to the **Console** tab
+3. Keep it open to monitor debug messages
+
+### **Step 3: Test Functionality**
+
+1. Navigate to any webpage with text content
+2. Select some text on the page
+3. Right-click → "Rephrase with RephraseGenie"
+4. Monitor console for debug messages
+5. Click the extension popup to view status and results
+
+---
+
+## 🚀 How to Use RephraseGenie
+
+### **Step 1: Get OpenAI API Key**
+
+1. Go to [OpenAI API Keys](https://platform.openai.com/api-keys)
+2. Sign in to your OpenAI account
+3. Click **"Create new secret key"**
+4. Copy the generated API key
+
+### **Step 2: Configure Extension**
+
+1. Click the **RephraseGenie** extension icon in Chrome toolbar
+2. Paste your API key in the input field
+3. Click **"Save API Key"**
+4. Wait for confirmation: ✅ *API key configured - Ready to rephrase!*
+
+### **Step 3: Start Rephrasing**
+
+1. Navigate to any webpage
+2. Select text you want to rephrase
+3. Right-click → **"Rephrase with RephraseGenie"**
+4. Check the extension popup for rephrased results
+
+---
